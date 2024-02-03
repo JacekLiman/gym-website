@@ -40,7 +40,7 @@ export const banner = {
   subtitle:
     'We provide serious fitness but within a fun and friendly, safe space.',
   textBtn: 'Join Now',
-  img: '',
+  
 };
 
 export const about = {
