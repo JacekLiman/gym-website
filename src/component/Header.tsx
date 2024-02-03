@@ -3,7 +3,15 @@ import Nav from "./Nav";
 
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
-const Header = () => {
+
+type HeaderProps = {
+    isOpen:boolean,
+    setIsOpen:React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Header = ({ isOpen, setIsOpen }:HeaderProps) => {
+
+  
   return (
     <header className="fixed top-0 left-0 w-screen z-10">
       <div className="max-w-[1444px] mx-auto">
@@ -17,7 +25,7 @@ const Header = () => {
             <Nav />
           </div>
 
-          <div className="lg:flex items-center gap-5 hidden ">
+          <div className="lg:flex items-center gap-3 hidden ">
             <button className="btn btn-sm bg-transparent text-white hover:text-primary-200 transition-all">
               {header.btnLoginText}
             </button>
@@ -26,9 +34,21 @@ const Header = () => {
             </button>
           </div>
 
-          <button className="text-primary-200 text-2xl lg:hidden">
-            <RiMenu4Fill />
-          </button>
+          {isOpen ? (
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-primary-200 text-2xl lg:hidden"
+            >
+              <RiMenu4Fill />
+            </button>
+          ) : (
+            <button
+              onClick={() => setIsOpen(true)}
+              className="text-primary-200 text-2xl lg:hidden"
+            >
+              <RiCloseFill />
+            </button>
+          )}
         </div>
       </div>
     </header>

@@ -5,7 +5,7 @@ import { nav } from "../data";
 const Nav = () => {
   return (
     <nav>
-      <ul className="flex items-center text-white gap-5">
+      <ul className="flex items-center text-white gap-4">
         {nav.map((item, idx) => {
           return (
             <li key={idx}>
