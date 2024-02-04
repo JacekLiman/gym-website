@@ -1,9 +1,47 @@
+import { workouts } from "../data";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "../workoutSlider.css";
+
+import { Navigation } from "swiper/modules";
 
 const WorkoutSlider = () => {
-  return (
-    <div>WorkoutSlider</div>
-  )
-}
+  const { programs } = workouts;
 
-export default WorkoutSlider
+  return (
+    <Swiper
+    className="workoutSlider"
+      slidesPerView={2}
+      spaceBetween={32}
+      navigation={true}
+      breakpoints={{
+        768: { slidesPerView: 3 },
+        1024: {
+          slidesPerView: 4,
+        },
+      }}
+
+      modules={[Navigation]}
+    >
+      {programs.map((program, idx) => {
+        const { image, name } = program;
+        return (
+          <SwiperSlide
+            className="max-w-[320px] max-h-[320px] relative"
+            key={idx}
+          >
+            <img className="w-full h-full object-cover" src={image} alt="" />
+            <div className="absolute left-[20px] bottom-[20px] bg-white px-[14px] rounded-[1px]">
+              <div className="font-primary font-semibold text-sm ">{name}</div>
+            </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  );
+};
+
+export default WorkoutSlider;
