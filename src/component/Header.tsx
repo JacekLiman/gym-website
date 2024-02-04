@@ -39,14 +39,14 @@ const Header = ({ isOpen, setIsOpen }:HeaderProps) => {
               onClick={() => setIsOpen(false)}
               className="text-primary-200 text-2xl lg:hidden"
             >
-              <RiMenu4Fill />
+              <RiCloseFill />
             </button>
           ) : (
             <button
               onClick={() => setIsOpen(true)}
               className="text-primary-200 text-2xl lg:hidden"
             >
-              <RiCloseFill />
+              <RiMenu4Fill />
             </button>
           )}
         </div>
