@@ -31,9 +31,7 @@
   .workoutSlider .swiper {
     height: auto;
   }
-  .workoutSlider .swiper-wrapper {
-    height: 320px;
-  }
+  
   .workoutSlider .swiper-button-prev,
   .workoutSlider .swiper-button-next {
     display: none;

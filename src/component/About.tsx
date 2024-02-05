@@ -6,7 +6,7 @@ const About = () => {
   const { title, subtitle1, subtitle2, icon, link } = about;
 
   return (
-    <section className="py-20 md:py-24">
+    <section className="py-20 md:py-24 bg-page">
       <div className="container mx-auto px-5 lg:px-32">
         <div>
           <div className="section-title-group">

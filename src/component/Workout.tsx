@@ -6,7 +6,7 @@ const Workout = () => {
   const { title, icon } = workouts;
 
   return (
-    <section className="section">
+    <section className="section bg-page">
       <div className="section-title-group justify-center">
         <img src={icon} alt="" />
         <h2 className="h2 section-title ">

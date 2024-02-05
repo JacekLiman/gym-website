@@ -13,9 +13,9 @@ const WorkoutSlider = () => {
 
   return (
     <Swiper
-    className="workoutSlider"
+      className="workoutSlider"
       slidesPerView={2}
-      spaceBetween={32}
+      spaceBetween={30}
       navigation={true}
       breakpoints={{
         768: { slidesPerView: 3 },
@@ -23,17 +23,16 @@ const WorkoutSlider = () => {
           slidesPerView: 4,
         },
       }}
-
       modules={[Navigation]}
     >
       {programs.map((program, idx) => {
         const { image, name } = program;
         return (
           <SwiperSlide
-            className="max-w-[320px] max-h-[320px] relative"
+            className="max-w-[320px]  relative"
             key={idx}
           >
-            <img className="w-full h-full object-cover" src={image} alt="" />
+            <img className="w-full object-cover" src={image} alt="" />
             <div className="absolute left-[20px] bottom-[20px] bg-white px-[14px] rounded-[1px]">
               <div className="font-primary font-semibold text-sm ">{name}</div>
             </div>
