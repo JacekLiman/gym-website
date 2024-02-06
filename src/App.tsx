@@ -7,6 +7,7 @@ import Workout from "./component/Workout";
 import Pricing from "./component/Pricing";
 import Community from "./component/Community";
 import Faq from "./component/Faq";
+import Join from "./component/join";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Pricing />
       <Community/>
       <Faq/>
+      <Join/>
     </div>
   );
 }
