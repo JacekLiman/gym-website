@@ -13,7 +13,7 @@ const Header = ({ isOpen, setIsOpen }:HeaderProps) => {
 
   
   return (
-    <header className="fixed top-0 left-0 w-screen z-10">
+    <header className="fixed top-0 left-0 w-screen z-50">
       <div className="max-w-[1444px] mx-auto">
         <div className="py-6 px-10 flex justify-between items-center">
           <div>

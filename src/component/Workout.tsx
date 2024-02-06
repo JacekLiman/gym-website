@@ -9,7 +9,7 @@ const Workout = () => {
     <section className="section bg-page">
       <div className="section-title-group justify-center">
         <img src={icon} alt="" />
-        <h2 className="h2 section-title ">
+        <h2 className="h2 ">
           {title}
           <span className="text-primary-200">.</span>
         </h2>

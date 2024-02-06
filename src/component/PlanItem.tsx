@@ -53,12 +53,12 @@ const PlanItem = ({
               <div
                 className={`${
                   active
-                    ? "bg-neutral-500 text-white"
-                    : "bg-white text-neutral-500"
+                    ? " text-white"
+                    : " text-neutral-500"
                 }`}
               >
                 <FaCircleCheck />
-              </div>{" "}
+              </div>
               {item.name}
             </li>
           );
@@ -68,7 +68,7 @@ const PlanItem = ({
       <button
         className={`${
           active ? "bg-neutral-200 " : "bg-transparent"
-        } block mx-auto py-2 px-6 border border-black text-base font-semibold text-neutral-500 `}
+        } block mx-auto py-2 px-6 border border-black text-base font-semibold text-neutral-500 tracking-widest `}
       >
         JOIN NOW
       </button>

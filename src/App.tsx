@@ -5,6 +5,7 @@ import NavMobile from "./component/NavMobile";
 import About from "./component/About";
 import Workout from "./component/Workout";
 import Pricing from "./component/Pricing";
+import Community from "./component/Community";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Workout />
       <Pricing />
+      <Community/>
     </div>
   );
 }

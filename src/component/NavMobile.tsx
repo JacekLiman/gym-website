@@ -9,7 +9,7 @@ const NavMobile = ({ isOpen }:NavMobileProps) => {
 
   return (
     <div
-      className={`lg:hidden fixed w-screen h-screen top-0 left-0 bg-neutral-500 flex items-center justify-center transition-all duration-400  ${
+      className={`lg:hidden fixed w-screen h-screen top-0 left-0 bg-neutral-500 flex items-center justify-center transition-all duration-400 z-40  ${
         isOpen ? "-translate-y-0" : "-translate-y-full"
       }  `}
     >

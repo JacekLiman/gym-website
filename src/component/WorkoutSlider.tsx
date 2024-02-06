@@ -15,7 +15,7 @@ const WorkoutSlider = () => {
     <Swiper
       className="workoutSlider"
       slidesPerView={2}
-      spaceBetween={30}
+      spaceBetween={10}
       navigation={true}
       breakpoints={{
         768: { slidesPerView: 3 },
