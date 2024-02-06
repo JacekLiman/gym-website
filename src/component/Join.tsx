@@ -1,7 +1,7 @@
 import { join } from "../data";
 
 const Join = () => {
-  const { image, title, subtitle, btnText } = join;
+  const { image, subtitle, btnText } = join;
   return (
     <section className="bg-neutral-500 section">
       <div className="container mx-auto ">
