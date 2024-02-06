@@ -6,6 +6,7 @@ import About from "./component/About";
 import Workout from "./component/Workout";
 import Pricing from "./component/Pricing";
 import Community from "./component/Community";
+import Faq from "./component/Faq";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
       <Workout />
       <Pricing />
       <Community/>
+      <Faq/>
     </div>
   );
 }
