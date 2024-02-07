@@ -12,7 +12,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-page section  px-5 xl:px-20">
-      <div className="section-title-group justify-center">
+      <div data-aos='fade-up' data-aos-delay='200' className="section-title-group justify-center">
         <img src={icon} alt="" />
         <h2 className="h2 ">
           {title}

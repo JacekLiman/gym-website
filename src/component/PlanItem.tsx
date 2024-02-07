@@ -21,10 +21,13 @@ const PlanItem = ({
 }: PlanItemProps) => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay = {delay}
       onClick={() => setActiveIdx(index)}
       className={`${
         active ? "bg-neutral-500 text-white" : "bg-neutral-200 text-neutral-500"
-      }  px-14 py-20  max-w-[400px] lg:max-w-none w-full cursor-pointer`}
+      }  px-14 py-20  max-w-[400px] lg:max-w-none w-full`}
     >
       <div className="text-center ">
         <span
@@ -51,11 +54,7 @@ const PlanItem = ({
           return (
             <li className="flex items-center gap-2" key={idx}>
               <div
-                className={`${
-                  active
-                    ? " text-white"
-                    : " text-neutral-500"
-                }`}
+                className={`${active ? " text-white" : " text-neutral-500"}`}
               >
                 <FaCircleCheck />
               </div>
