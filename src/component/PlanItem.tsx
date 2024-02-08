@@ -4,7 +4,6 @@ type PlanItemProps = {
   name: string;
   price: string;
   list: { name: string }[];
-  delay: number;
   active: boolean;
   index: number;
   setActiveIdx: React.Dispatch<React.SetStateAction<number>>;
@@ -14,16 +13,13 @@ const PlanItem = ({
   name,
   price,
   list,
-  delay,
   active,
   index,
   setActiveIdx,
 }: PlanItemProps) => {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay = {delay}
+      
       onClick={() => setActiveIdx(index)}
       className={`${
         active ? "bg-neutral-500 text-white" : "bg-neutral-200 text-neutral-500"
