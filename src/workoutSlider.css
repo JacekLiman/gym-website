@@ -1,7 +1,7 @@
-/* .workoutSlider .swiper-wrapper {
+.workoutSlider .swiper-wrapper {
   padding-bottom:60px
  
-} */
+}
 
 .workoutSlider .swiper-button-prev::after,
 .workoutSlider .swiper-button-next::after {
