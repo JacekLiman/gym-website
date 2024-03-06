@@ -22,7 +22,7 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
       </div>
       <p
         className={` ${
-          isActive ? "max-h-[100px] my-6" : "max-h-0 my-0"
+          isActive ? "max-h-[1000px] my-6" : "max-h-0 my-0"
         } text-sm  overflow-hidden transition-all duration-300`}
       >
         {answer}

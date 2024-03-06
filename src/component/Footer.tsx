@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-neutral-500 py-10">
       <div
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-delay="200"
         className="container mx-auto flex justify-between px-5"
       >
         <div>

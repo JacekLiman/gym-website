@@ -28,7 +28,7 @@ const CommunitySlider = ({ testimonials }: CommunitySliderProps) => {
         return (
           <SwiperSlide key={idx} className="relative">
             <img className="w-full" src={image} alt="" />
-            <div className="p-3 text-center absolute bottom-5 left-0 w-full  text-white">
+            <div className="p-3 text-center absolute bottom-5 left-0 w-full text-white">
               <p className="italic text-base font-light">{message}</p>
               <h3 className="text-white mt-5">
                 <span className="text-primary-200">~</span> {name}

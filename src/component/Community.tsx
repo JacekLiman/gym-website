@@ -10,7 +10,7 @@ const Community = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="section-title-group mx-auto xl:mx-0 w-1/3 xl:pl-0 "
+            className="section-title-group mx-auto xl:mx-0 xl:w-1/3 xl:pl-0 "
           >
             <img src={icon} alt="" />
             <h2 className="h2">
